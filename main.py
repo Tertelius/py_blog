@@ -1,21 +1,11 @@
-# This is a sample Python script.
+from flask import Flask
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+app = Flask(__name__)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+@app.route('/')
+def index():
+    return "hello World"
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi(__name__)
-    print(type(__name__))
-    print('Как же достало несоотвествие   версий проекта это написано на ноуте')
-    print('Как же достало несоотвествие версий проекта это написано на ноуте')
-    print('Как же достало несоотвествие версий проекта это написано на ноуте')
-
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    app.run(debug=True)
