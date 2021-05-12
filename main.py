@@ -13,7 +13,7 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi(__name__)
     print(type(__name__))
-
+    print('Как же достало несоотвествие версий проекта')
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
