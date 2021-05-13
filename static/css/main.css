@@ -1,0 +1,10 @@
+html{
+    background: #274E7D;
+    color: #FFC973;
+}
+body{
+    width: 800px;
+    marign: auto;
+    border: 4px double #BF8830;
+    padding: 10px;
+}

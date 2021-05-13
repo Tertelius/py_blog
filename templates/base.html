@@ -2,9 +2,18 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/main.css') }}">
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-  {% block body %}{% endblock %}
+
+    <header>
+        Шапка сайта!
+    </header>
+
+    <div>
+        {% block body %}{% endblock %}
+    </div>
+
 </body>
 </html>
