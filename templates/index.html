@@ -1,15 +1,16 @@
+{% extends 'base.html' %}
+
 {% block title %}
 Сайт АСК.
 {% endblock %}
 
 {% block body %}
-<h1 STYLE="background: #04346C; color: #FFC973; text-align: center; border: 5px green double;">
+<h1 STYLE="background: #04346C; color: #FFC973; text-align: center; border: 5px green double;" >
     Приветствую вас на моей страничке!
 </h1>
 
 {% endblock %}
 
-<footer>
-    <a href="/about" >О сайте.</a>
-</footer>
-</html>
+{% block footer %}
+<a href="/about" >О сайте.</a>
+{% endblock %}
