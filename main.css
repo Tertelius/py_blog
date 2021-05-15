@@ -1,0 +1,23 @@
+html{
+    background: #1E2129;
+    color: white;
+}
+body{
+    width: 800px;
+    margin: auto;
+    padding: 0px;
+}
+header{
+    border: 2px solid #BF8830;
+    text-align: center;
+    background: #939AAD;
+    padding: 5px;
+    font-size: 150%;
+    text-shadow: 2px 2px 5px black;
+}
+footer{
+    border: 2px solid #BF8830;
+    background: #939AAD;
+    padding: 5px;
+    text-align: right;
+}
