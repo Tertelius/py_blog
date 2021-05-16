@@ -27,10 +27,11 @@ def index():
 
 @app.route('/about')
 def about():
+    print('Ghbdtn')
     return render_template("about.html")
 
 
-@app.route('/create-article', methods=['GET', 'POST'])
+@app.route('/create-article', methods=['POST', 'GET'])
 def create_article():
     if request.method == 'POST':
         # title = request.form['title']
