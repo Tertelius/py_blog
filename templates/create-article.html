@@ -5,12 +5,15 @@ Add
 {% endblock %}
 
 {% block body %}
+<div class="container mt-5">
     <h1>Добавление статьи</h1>
-    <form method="post"></form>
-      <input type="text" name="title" id="title" class="form-control" placeholder="Введите название статьи"><br>
-      <textarea name="intro" id="intro" class="form-control" placeholder="Введите превью статьи"></textarea><br>
-      <textarea name="text" id="text" class="form-control" placeholder="Введите текст статьи"></textarea><br>
-      <input type="submit"  class="btn btn-success" value="submit">
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" placeholder="Введите название статьи"><br>
+        <textarea name="intro" id="intro" class="form-control" placeholder="Введите превью статьи"></textarea><br>
+        <textarea name="text" id="text" class="form-control" placeholder="Введите текст статьи"></textarea><br>
+        <input type="submit"  class="btn btn-success" value="Отправить статью">
+    </form> <!-- Закрывающий тег остался в начале объявления формы, вот мы и не получали данных. )-->
+</div>
 {% endblock %}
 
 {% block footer %}
