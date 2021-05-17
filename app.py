@@ -34,19 +34,18 @@ def about():
 @app.route('/create-article', methods=['POST', 'GET'])
 def create_article():
     if request.method == 'POST':
-        # title = request.form['title']
-        # intro = request.form['intro']
-        # text = request.form['text']
-        #
-        # article = Article(title=title, intro=intro, text=text)
-        #
-        # try:
-        #     db.session.add(article)
-        #     db.session.commit()
-        #     return redirect('/')
-        # except:
-        #     return "При добавлении статьи произошла ошибка"
-        return redirect('/')
+        title = request.form['title']
+        intro = request.form['intro']
+        text = request.form['text']
+
+        article = Article(title=title, intro=intro, text=text)
+
+        try:
+            db.session.add(article)
+            db.session.commit()
+            return redirect('/')
+        except:
+            return "При добавлении статьи произошла ошибка"
     else:
         return render_template("create-article.html")
 
