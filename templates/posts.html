@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+View.
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="text-center">Все статьи на сайте.</h1>
+
+        {% for el in articles %}
+        <div class="alert alert-info">
+            <h2>{{ el.title }}</h2>
+            <h2>{{ el.intro }}</h2>
+            <p><b>{{ el.date.date() }}</b></p>
+            <p><b>{{ el.date.time() }}</b></p>
+            <a href="/posts/{{el.id}}" class="btn btn-warning">Детальнее</a>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block footer %}
+<a href="/" >На главную.</a>
+{% endblock %}
